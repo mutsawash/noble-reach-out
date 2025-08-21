@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Heart, Users, Briefcase, GraduationCap, Scale, HandHeart, MapPin, Mail, Phone } from "lucide-react";
 
 const Index = () => {
+  // Noble Foundation Website - Updated
   const initiatives = [
     {
       icon: GraduationCap,
