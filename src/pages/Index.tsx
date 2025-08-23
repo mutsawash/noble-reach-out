@@ -53,7 +53,7 @@ const Index = () => {
             </nav>
             <Button 
               className="bg-primary hover:bg-primary/90"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => window.open('https://wa.me/263775095949?text=Hi! I would like to get involved with Noble Foundation and learn more about how I can contribute to your mission of empowering people with disabilities.', '_blank')}
             >
               Get Involved
             </Button>
@@ -351,7 +351,7 @@ const Index = () => {
                   </div>
                   <Button 
                     className="w-full bg-primary hover:bg-primary/90"
-                    onClick={() => window.open('tel:+263775095949', '_self')}
+                    onClick={() => window.open('https://wa.me/263775095949?text=Hi! I would like to apply for membership with Noble Foundation. Please provide me with the application form and membership details.', '_blank')}
                   >
                     Apply for Membership
                   </Button>
@@ -379,7 +379,7 @@ const Index = () => {
               <Button 
                 variant="outline" 
                 size="sm"
-                onClick={() => window.open('tel:+263775095949', '_self')}
+                onClick={() => window.open('https://wa.me/263775095949?text=Hi! I would like to make a donation to Noble Foundation to support your mission of empowering people with disabilities. Please let me know how I can contribute.', '_blank')}
               >
                 Donate Now
               </Button>
@@ -392,10 +392,10 @@ const Index = () => {
               <Button 
                 variant="outline" 
                 size="sm"
-                onClick={() => window.open('mailto:info@noblefoundation.org?subject=Partnership Inquiry', '_blank')}
+                onClick={() => window.open('https://wa.me/263775095949?text=Hi! I am interested in partnering with Noble Foundation on income-generating projects. Please share more information about partnership opportunities.', '_blank')}
               >
                 <ExternalLink className="mr-1 h-3 w-3" />
-                Learn More
+                Partner
               </Button>
             </Card>
             
@@ -406,10 +406,10 @@ const Index = () => {
               <Button 
                 variant="outline" 
                 size="sm"
-                onClick={() => window.open('mailto:info@noblefoundation.org?subject=Volunteer Application', '_blank')}
+                onClick={() => window.open('https://wa.me/263775095949?text=Hi! I would like to volunteer with Noble Foundation and share my skills and time with your community. Please let me know about volunteer opportunities.', '_blank')}
               >
                 <ExternalLink className="mr-1 h-3 w-3" />
-                Join Us
+                Volunteer
               </Button>
             </Card>
           </div>
