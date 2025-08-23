@@ -1,7 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Heart, Users, Briefcase, GraduationCap, Scale, HandHeart, MapPin, Mail, Phone } from "lucide-react";
+import { Heart, Users, Briefcase, GraduationCap, Scale, HandHeart, MapPin, Mail, Phone, ExternalLink } from "lucide-react";
+import heroImage from "@/assets/hero-wheelchair-family.jpg";
+import cafeImage from "@/assets/cafe-inclusion.jpg";
+import streetImage from "@/assets/wheelchair-street.jpg";
+import professionalImage from "@/assets/professional-woman.jpg";
+import sportsImage from "@/assets/adaptive-sports.jpg";
+import communityImage from "@/assets/community-work.jpg";
+import childrenImage from "@/assets/children-playing.jpg";
 
 const Index = () => {
   // Noble Foundation Website - Updated
@@ -44,33 +51,58 @@ const Index = () => {
               <a href="#membership" className="text-muted-foreground hover:text-foreground transition-colors">Membership</a>
               <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">Contact</a>
             </nav>
-            <Button className="bg-primary hover:bg-primary/90">Get Involved</Button>
+            <Button 
+              className="bg-primary hover:bg-primary/90"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Get Involved
+            </Button>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-primary/5 to-accent/5">
-        <div className="container mx-auto px-4 text-center">
-          <Badge className="mb-6 bg-primary/10 text-primary border-primary/20 hover:bg-primary/20">
-            Empowering People with Disabilities
-          </Badge>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Noble Foundation
-          </h1>
-          <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-            Ensuring people living with disabilities are included in the corporate world, 
-            including government institutions and agencies. We nurture and empower individuals 
-            with unique talents and skills.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-primary hover:bg-primary/90">
-              <Heart className="mr-2 h-5 w-5" />
-              Support Our Mission
-            </Button>
-            <Button size="lg" variant="outline">
-              Learn More
-            </Button>
+      <section className="relative py-20 bg-gradient-to-br from-primary/5 to-accent/5 overflow-hidden">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="text-center lg:text-left">
+              <Badge className="mb-6 bg-primary/10 text-primary border-primary/20 hover:bg-primary/20">
+                Empowering People with Disabilities
+              </Badge>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                Noble Foundation
+              </h1>
+              <p className="text-xl text-muted-foreground mb-8 max-w-3xl leading-relaxed">
+                Ensuring people living with disabilities are included in the corporate world, 
+                including government institutions and agencies. We nurture and empower individuals 
+                with unique talents and skills.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Button 
+                  size="lg" 
+                  className="bg-primary hover:bg-primary/90"
+                  onClick={() => window.open('tel:+263775095949', '_self')}
+                >
+                  <Heart className="mr-2 h-5 w-5" />
+                  Support Our Mission
+                </Button>
+                <Button 
+                  size="lg" 
+                  variant="outline"
+                  onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+                >
+                  Learn More
+                </Button>
+              </div>
+            </div>
+            <div className="relative">
+              <img 
+                src={heroImage} 
+                alt="Smiling woman in wheelchair with happy child, representing family support and empowerment"
+                className="rounded-2xl shadow-2xl w-full object-cover h-[500px]"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-2xl"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -94,9 +126,21 @@ const Index = () => {
                 To ensure people living with disabilities are included in the corporate world, 
                 creating opportunities for meaningful employment and career advancement.
               </p>
-              <div className="flex items-center text-muted-foreground">
+              <div className="flex items-center text-muted-foreground mb-6">
                 <MapPin className="h-5 w-5 mr-2 text-primary" />
                 <span>57 Five Avenue, Harare</span>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <img 
+                  src={professionalImage} 
+                  alt="Professional woman in wheelchair in modern office environment"
+                  className="rounded-lg object-cover h-32 w-full"
+                />
+                <img 
+                  src={cafeImage} 
+                  alt="Inclusive workplace showing people with disabilities working together"
+                  className="rounded-lg object-cover h-32 w-full"
+                />
               </div>
             </div>
             <Card className="p-6 shadow-lg border-primary/10">
@@ -154,14 +198,21 @@ const Index = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="p-6">
-              <CardHeader>
+            <Card className="p-6 relative overflow-hidden">
+              <div className="absolute inset-0 opacity-10">
+                <img 
+                  src={streetImage} 
+                  alt="Person in wheelchair navigating urban environment independently"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <CardHeader className="relative">
                 <CardTitle className="flex items-center text-primary">
                   <Briefcase className="mr-2 h-5 w-5" />
                   Fundraising & Awareness
                 </CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="relative">
                 <p className="text-muted-foreground leading-relaxed">
                   We actively fundraise through various channels and plan to produce a reality show 
                   that showcases the daily lives of people with disabilities, raising awareness and 
@@ -170,14 +221,21 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="p-6">
-              <CardHeader>
+            <Card className="p-6 relative overflow-hidden">
+              <div className="absolute inset-0 opacity-10">
+                <img 
+                  src={sportsImage} 
+                  alt="People with disabilities playing adaptive sports including football"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <CardHeader className="relative">
                 <CardTitle className="flex items-center text-primary">
                   <Users className="mr-2 h-5 w-5" />
                   Community Engagement
                 </CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="relative">
                 <p className="text-muted-foreground leading-relaxed">
                   Our community meet-ups feature business seminars, networking opportunities, 
                   and platforms to showcase passion projects like art, dance, and music. 
@@ -185,6 +243,49 @@ const Index = () => {
                 </p>
               </CardContent>
             </Card>
+          </div>
+          
+          {/* Additional Images Section */}
+          <div className="mt-16">
+            <h3 className="text-2xl font-bold text-center mb-8">Our Community in Action</h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="relative rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src={communityImage} 
+                  alt="Community member contributing through volunteer work"
+                  className="w-full h-64 object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h4 className="font-semibold">Community Impact</h4>
+                  <p className="text-sm opacity-90">Making a difference together</p>
+                </div>
+              </div>
+              <div className="relative rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src={childrenImage} 
+                  alt="Children playing joyfully in the rain, representing hope and resilience"
+                  className="w-full h-64 object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h4 className="font-semibold">Future Generation</h4>
+                  <p className="text-sm opacity-90">Building hope for tomorrow</p>
+                </div>
+              </div>
+              <div className="relative rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src={sportsImage} 
+                  alt="Adaptive sports activities promoting inclusion and fitness"
+                  className="w-full h-64 object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h4 className="font-semibold">Sports & Recreation</h4>
+                  <p className="text-sm opacity-90">Breaking barriers through sports</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -248,7 +349,10 @@ const Index = () => {
                       <span className="text-muted-foreground">Pay annual subscription fee</span>
                     </div>
                   </div>
-                  <Button className="w-full bg-primary hover:bg-primary/90">
+                  <Button 
+                    className="w-full bg-primary hover:bg-primary/90"
+                    onClick={() => window.open('tel:+263775095949', '_self')}
+                  >
                     Apply for Membership
                   </Button>
                 </CardContent>
@@ -272,21 +376,41 @@ const Index = () => {
               <Heart className="h-12 w-12 text-primary mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Donate</h3>
               <p className="text-muted-foreground mb-4">Make a direct impact with your generous contribution</p>
-              <Button variant="outline" size="sm">Donate Now</Button>
+              <Button 
+                variant="outline" 
+                size="sm"
+                onClick={() => window.open('tel:+263775095949', '_self')}
+              >
+                Donate Now
+              </Button>
             </Card>
             
             <Card className="p-6 text-center hover:shadow-lg transition-all duration-300">
               <Briefcase className="h-12 w-12 text-primary mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Partner</h3>
               <p className="text-muted-foreground mb-4">Collaborate with us on income-generating projects</p>
-              <Button variant="outline" size="sm">Learn More</Button>
+              <Button 
+                variant="outline" 
+                size="sm"
+                onClick={() => window.open('mailto:info@noblefoundation.org?subject=Partnership Inquiry', '_blank')}
+              >
+                <ExternalLink className="mr-1 h-3 w-3" />
+                Learn More
+              </Button>
             </Card>
             
             <Card className="p-6 text-center hover:shadow-lg transition-all duration-300">
               <Users className="h-12 w-12 text-primary mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Volunteer</h3>
               <p className="text-muted-foreground mb-4">Share your skills and time with our community</p>
-              <Button variant="outline" size="sm">Join Us</Button>
+              <Button 
+                variant="outline" 
+                size="sm"
+                onClick={() => window.open('mailto:info@noblefoundation.org?subject=Volunteer Application', '_blank')}
+              >
+                <ExternalLink className="mr-1 h-3 w-3" />
+                Join Us
+              </Button>
             </Card>
           </div>
         </div>
@@ -320,7 +444,9 @@ const Index = () => {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Phone className="h-4 w-4 text-primary" />
-                  <span>+263 XX XXX XXXX</span>
+                  <a href="tel:+263775095949" className="hover:text-primary transition-colors">
+                    +263 77 509 5949
+                  </a>
                 </div>
               </div>
             </div>
