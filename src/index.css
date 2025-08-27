@@ -17,36 +17,36 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 225 15% 20%;
 
-    --primary: 330 81% 60%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 0 0% 10%;
+    --primary-foreground: 45 100% 50%;
 
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 225 15% 20%;
+    --secondary: 45 15% 95%;
+    --secondary-foreground: 0 0% 10%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 45 15% 95%;
+    --muted-foreground: 0 0% 40%;
 
-    --accent: 210 98% 55%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 45 100% 50%;
+    --accent-foreground: 0 0% 10%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 330 81% 60%;
+    --border: 45 20% 85%;
+    --input: 45 20% 85%;
+    --ring: 45 100% 50%;
 
     --radius: 0.75rem;
 
     /* Custom tokens for Noble Foundation */
-    --noble-pink: 330 81% 60%;
-    --noble-blue: 210 98% 55%;
-    --noble-dark: 225 15% 20%;
-    --noble-light: 210 40% 96%;
+    --noble-black: 0 0% 10%;
+    --noble-gold: 45 100% 50%;
+    --noble-dark: 0 0% 5%;
+    --noble-light: 45 15% 95%;
     
-    --gradient-primary: linear-gradient(135deg, hsl(var(--noble-pink)), hsl(var(--primary)));
-    --gradient-accent: linear-gradient(135deg, hsl(var(--noble-blue)), hsl(var(--accent)));
-    --shadow-elegant: 0 10px 30px -10px hsl(var(--noble-pink) / 0.2);
+    --gradient-primary: linear-gradient(135deg, hsl(var(--noble-black)), hsl(var(--noble-gold)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--noble-gold)), hsl(var(--accent)));
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--noble-gold) / 0.2);
 
     --sidebar-background: 0 0% 98%;
 
@@ -75,24 +75,24 @@ All colors MUST be HSL.
     --popover: 225 15% 10%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 330 81% 65%;
-    --primary-foreground: 225 15% 8%;
+    --primary: 0 0% 5%;
+    --primary-foreground: 45 100% 50%;
 
-    --secondary: 225 15% 15%;
-    --secondary-foreground: 0 0% 95%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 45 100% 50%;
 
-    --muted: 225 15% 15%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 45 50% 70%;
 
-    --accent: 210 98% 60%;
-    --accent-foreground: 225 15% 8%;
+    --accent: 45 100% 50%;
+    --accent-foreground: 0 0% 5%;
 
     --destructive: 0 63% 31%;
     --destructive-foreground: 0 0% 95%;
 
-    --border: 225 15% 15%;
-    --input: 225 15% 15%;
-    --ring: 330 81% 65%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 45 100% 50%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
