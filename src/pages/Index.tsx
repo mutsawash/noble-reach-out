@@ -10,6 +10,7 @@ import sportsImage from "@/assets/adaptive-sports.jpg";
 import communityImage from "@/assets/community-work.jpg";
 import childrenImage from "@/assets/children-playing.jpg";
 
+
 const Index = () => {
   // Noble Foundation Website - Updated
   const initiatives = [
@@ -42,7 +43,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <Heart className="h-8 w-8 text-primary" />
+              <img src="/lovable-uploads/b417384e-6164-4d06-abc7-0cd4839788bf.png" alt="Noble Foundation Logo" className="h-8 w-8 object-contain" />
               <span className="text-2xl font-bold text-foreground">Noble Foundation</span>
             </div>
             <nav className="hidden md:flex space-x-6">
@@ -83,7 +84,7 @@ const Index = () => {
                   className="bg-primary hover:bg-primary/90"
                   onClick={() => window.open('tel:+263775095949', '_self')}
                 >
-                  <Heart className="mr-2 h-5 w-5" />
+                  <img src="/lovable-uploads/b417384e-6164-4d06-abc7-0cd4839788bf.png" alt="Noble Foundation Logo" className="mr-2 h-5 w-5 object-contain" />
                   Support Our Mission
                 </Button>
                 <Button 
@@ -373,7 +374,7 @@ const Index = () => {
           
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             <Card className="p-6 text-center hover:shadow-lg transition-all duration-300">
-              <Heart className="h-12 w-12 text-primary mx-auto mb-4" />
+              <img src="/lovable-uploads/b417384e-6164-4d06-abc7-0cd4839788bf.png" alt="Noble Foundation Logo" className="h-12 w-12 mx-auto mb-4 object-contain" />
               <h3 className="text-xl font-semibold mb-2">Donate</h3>
               <p className="text-muted-foreground mb-4">Make a direct impact with your generous contribution</p>
               <Button 
@@ -422,7 +423,7 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <Heart className="h-6 w-6 text-primary" />
+                <img src="/lovable-uploads/b417384e-6164-4d06-abc7-0cd4839788bf.png" alt="Noble Foundation Logo" className="h-6 w-6 object-contain" />
                 <span className="text-xl font-bold text-foreground">Noble Foundation</span>
               </div>
               <p className="text-muted-foreground leading-relaxed">
