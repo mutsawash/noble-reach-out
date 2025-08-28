@@ -114,7 +114,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-4xl font-bold mb-6">About Noble Foundation</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Based in Harare Province with our head office at 57 Five Avenue, Noble Foundation 
+              Based in Harare Province with our head office at 57 Fife Avenue, Noble Foundation 
               is dedicated to creating an inclusive corporate world where people with disabilities 
               can thrive and contribute their unique talents.
             </p>
@@ -127,9 +127,17 @@ const Index = () => {
                 To ensure people living with disabilities are included in the corporate world, 
                 creating opportunities for meaningful employment and career advancement.
               </p>
+              <h3 className="text-2xl font-semibold mb-4 text-primary">Our Values</h3>
+              <ul className="text-muted-foreground mb-6 leading-relaxed space-y-2">
+                <li>• <strong>Inclusion:</strong> Everyone deserves equal opportunities regardless of ability</li>
+                <li>• <strong>Empowerment:</strong> Building confidence and skills for independence</li>
+                <li>• <strong>Dignity:</strong> Respecting the worth and potential of every individual</li>
+                <li>• <strong>Innovation:</strong> Using technology and creative solutions to break barriers</li>
+                <li>• <strong>Community:</strong> Fostering connections and support networks</li>
+              </ul>
               <div className="flex items-center text-muted-foreground mb-6">
                 <MapPin className="h-5 w-5 mr-2 text-primary" />
-                <span>57 Five Avenue, Harare</span>
+                <span>57 Fife Avenue, Harare</span>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <img 
@@ -283,7 +291,7 @@ const Index = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 text-white">
                   <h4 className="font-semibold">Sports & Recreation</h4>
-                  <p className="text-sm opacity-90">Breaking barriers through sports</p>
+                  <p className="text-sm opacity-90">Breaking barriers through sports and technology</p>
                 </div>
               </div>
             </div>
@@ -437,11 +445,11 @@ const Index = () => {
               <div className="space-y-2 text-muted-foreground">
                 <div className="flex items-center space-x-2">
                   <MapPin className="h-4 w-4 text-primary" />
-                  <span>57 Five Avenue, Harare</span>
+                  <span>57 Fife Avenue, Harare</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Mail className="h-4 w-4 text-primary" />
-                  <span>info@noblefoundation.org</span>
+                  <span>noblefoundation57@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Phone className="h-4 w-4 text-primary" />
