@@ -122,6 +122,12 @@ const Index = () => {
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
+              <h3 className="text-2xl font-semibold mb-4 text-primary">Our Vision</h3>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                A world where people with disabilities are fully integrated into all aspects of society, 
+                particularly in the corporate sector, where their unique talents and perspectives are 
+                valued and celebrated as drivers of innovation and success.
+              </p>
               <h3 className="text-2xl font-semibold mb-4 text-primary">Our Mission</h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 To ensure people living with disabilities are included in the corporate world, 
