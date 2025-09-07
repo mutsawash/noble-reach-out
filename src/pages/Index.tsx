@@ -350,9 +350,9 @@ const Index = () => {
                     Membership is <strong className="text-primary">free</strong> and open to all interested individuals aged 18 and above, 
                     as well as institutions that align with our objectives.
                   </p>
-                  <div className="bg-primary/5 p-4 rounded-lg mb-6">
-                    <p className="text-sm text-muted-foreground">
-                      <strong>Important:</strong> Membership requires a certificate of disability from a competent doctor.
+                  <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded-lg mb-6">
+                    <p className="text-sm font-semibold text-red-800">
+                      <strong>⚠️ IMPORTANT REQUIREMENT:</strong> Membership requires a certificate of disability from a competent doctor.
                     </p>
                   </div>
                   <div className="space-y-4">
