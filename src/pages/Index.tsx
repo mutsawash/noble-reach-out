@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Heart, Users, Briefcase, GraduationCap, Scale, HandHeart, MapPin, Mail, Phone, ExternalLink } from "lucide-react";
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import { AppSidebar } from "@/components/AppSidebar";
 import heroImage from "@/assets/hero-wheelchair-family.jpg";
 import cafeImage from "@/assets/cafe-inclusion.jpg";
 import streetImage from "@/assets/wheelchair-street.jpg";
@@ -37,15 +39,20 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="border-b bg-card/50 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <img src="/lovable-uploads/b417384e-6164-4d06-abc7-0cd4839788bf.png" alt="Noble Foundation Logo" className="h-8 w-8 object-contain" />
-              <span className="text-2xl font-bold text-foreground">Noble Foundation</span>
-            </div>
+    <SidebarProvider defaultOpen={false}>
+      <div className="min-h-screen w-full flex bg-background">
+        <AppSidebar />
+        
+        <div className="flex-1 flex flex-col">
+          {/* Header */}
+          <header className="border-b bg-card/50 backdrop-blur-sm sticky top-0 z-50">
+            <div className="container mx-auto px-4 py-4">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center space-x-2">
+                  <SidebarTrigger />
+                  <img src="/lovable-uploads/b417384e-6164-4d06-abc7-0cd4839788bf.png" alt="Noble Foundation Logo" className="h-8 w-8 object-contain" />
+                  <span className="text-2xl font-bold text-foreground">Noble Foundation</span>
+                </div>
             <nav className="hidden md:flex space-x-6">
               <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">About</a>
               <a href="#work" className="text-muted-foreground hover:text-foreground transition-colors">Our Work</a>
@@ -62,7 +69,8 @@ const Index = () => {
         </div>
       </header>
 
-      {/* Hero Section */}
+      <main className="flex-1">
+        {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-primary/5 to-accent/5 overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -435,6 +443,7 @@ const Index = () => {
           </div>
         </div>
       </section>
+      </main>
 
       {/* Footer */}
       <footer id="contact" className="bg-card border-t py-12">
@@ -487,7 +496,9 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>
+        </div>
+      </div>
+    </SidebarProvider>
   );
 };
 
