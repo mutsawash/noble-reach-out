@@ -347,9 +347,14 @@ const Index = () => {
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <p className="text-muted-foreground leading-relaxed">
-                    Membership is open to all interested individuals aged 18 and above, 
+                    Membership is <strong className="text-primary">free</strong> and open to all interested individuals aged 18 and above, 
                     as well as institutions that align with our objectives.
                   </p>
+                  <div className="bg-primary/5 p-4 rounded-lg mb-6">
+                    <p className="text-sm text-muted-foreground">
+                      <strong>Important:</strong> Membership requires a certificate of disability from a competent doctor.
+                    </p>
+                  </div>
                   <div className="space-y-4">
                     <div className="flex items-center space-x-3">
                       <Badge className="bg-primary/10 text-primary">1</Badge>
@@ -357,11 +362,11 @@ const Index = () => {
                     </div>
                     <div className="flex items-center space-x-3">
                       <Badge className="bg-primary/10 text-primary">2</Badge>
-                      <span className="text-muted-foreground">Submit to Executive Committee</span>
+                      <span className="text-muted-foreground">Provide certificate of disability from competent doctor</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <Badge className="bg-primary/10 text-primary">3</Badge>
-                      <span className="text-muted-foreground">Pay annual subscription fee</span>
+                      <span className="text-muted-foreground">Submit to Executive Committee</span>
                     </div>
                   </div>
                   <Button 
