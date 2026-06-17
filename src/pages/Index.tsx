@@ -138,8 +138,7 @@ const Index = () => {
               </p>
               <h3 className="text-2xl font-semibold mb-4 text-primary">Our Mission</h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                To ensure people living with disabilities are included in the corporate world, 
-                creating opportunities for meaningful employment and career advancement.
+                Empower 5000 Nobles (Our Beneficiaries) by 2030 through partnerships with different institutions in and outside government structures. Initiate then setoff projects, secure scholarships and vocational training in collaboration with Donors and different organizations. Primary focus is Zimbabwe.
               </p>
               <h3 className="text-2xl font-semibold mb-4 text-primary">Our Values</h3>
               <ul className="text-muted-foreground mb-6 leading-relaxed space-y-2">
@@ -174,7 +173,7 @@ const Index = () => {
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
                     <span className="text-muted-foreground">Primary Focus</span>
-                    <Badge variant="secondary">Harare Province</Badge>
+                    <Badge variant="secondary">Zimbabwe</Badge>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-muted-foreground">Target Audience</span>
@@ -379,7 +378,7 @@ const Index = () => {
                   </div>
                   <Button 
                     className="w-full bg-primary hover:bg-primary/90"
-                    onClick={() => window.open('https://wa.me/263775095949?text=Hi! I would like to apply for membership with Noble Foundation. Please provide me with the application form and membership details.', '_blank')}
+                    onClick={() => window.open('https://eu.docworkspace.com/d/sbTaycC3zIwkxNTG_z4heno5uvkdefgd6ng?sa=601.1074', '_blank')}
                   >
                     Apply for Membership
                   </Button>
