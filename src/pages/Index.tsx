@@ -173,7 +173,7 @@ const Index = () => {
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
                     <span className="text-muted-foreground">Primary Focus</span>
-                    <Badge variant="secondary">Harare Province</Badge>
+                    <Badge variant="secondary">Zimbabwe</Badge>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-muted-foreground">Target Audience</span>
