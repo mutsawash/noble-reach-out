@@ -378,7 +378,7 @@ const Index = () => {
                   </div>
                   <Button 
                     className="w-full bg-primary hover:bg-primary/90"
-                    onClick={() => window.open('https://wa.me/263775095949?text=Hi! I would like to apply for membership with Noble Foundation. Please provide me with the application form and membership details.', '_blank')}
+                    onClick={() => window.open('https://eu.docworkspace.com/d/sbTaycC3zIwkxNTG_z4heno5uvkdefgd6ng?sa=601.1074', '_blank')}
                   >
                     Apply for Membership
                   </Button>
