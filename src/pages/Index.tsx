@@ -138,8 +138,7 @@ const Index = () => {
               </p>
               <h3 className="text-2xl font-semibold mb-4 text-primary">Our Mission</h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                To ensure people living with disabilities are included in the corporate world, 
-                creating opportunities for meaningful employment and career advancement.
+                Empower 5000 Nobles (Our Beneficiaries) by 2030 through partnerships with different institutions in and outside government structures. Initiate then setoff projects, secure scholarships and vocational training in collaboration with Donors and different organizations. Primary focus is Zimbabwe.
               </p>
               <h3 className="text-2xl font-semibold mb-4 text-primary">Our Values</h3>
               <ul className="text-muted-foreground mb-6 leading-relaxed space-y-2">
